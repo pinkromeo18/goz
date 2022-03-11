@@ -3,7 +3,7 @@ import {tab} from "https://pinkromeo18.github.io/goz/tab.js"
 import {v3d} from "https://pinkromeo18.github.io/goz/v3d.js"
 
 
-function Goz(query,url){
+export function Goz(query,url){
   var parent=fn.q(query);
   parent.classList.add('goz');
   
