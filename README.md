@@ -4,7 +4,7 @@ game font goz.css
 -  https://pinkromeo18.github.io/goz/view.html
 
 ```html
-<div class="goz"></div>
+<div class="goz x2"></div>
 <style>
 @import url(https://pinkromeo18.github.io/goz/goz.css);
 </style>
