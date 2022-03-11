@@ -17,8 +17,18 @@ body{
   line-height:1.0!important;
 }
 
-.gain{
+*{font-family:"goz"!important;}
+
+.x2{
   transform:scale(2);
+  transform-origin:left top;  
+}
+.x3{
+  transform:scale(3);
+  transform-origin:left top;  
+}
+.x4{
+  transform:scale(4);
   transform-origin:left top;  
 }
   
