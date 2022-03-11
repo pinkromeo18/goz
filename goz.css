@@ -4,9 +4,10 @@
 }
 
 body{
-  background:black;
+  background:darkblue;
   color:white;
 }
+
 body{
   font-size:10px;
   -webkit-font-smoothing:none!important;
@@ -30,5 +31,15 @@ body{
 .x4{
   transform:scale(4);
   transform-origin:left top;  
+}
+
+
+.goz{background:black;width:320px;height:320px;position:relative;}
+.goz canvas{color:white;background:black;width:100%;}
+.goz div{position:absolute;top:0;left:0;white-space:pre-wrap;}
+.goz div{
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
   
