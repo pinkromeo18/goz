@@ -1,6 +1,7 @@
 import "https://pinkromeo18.github.io/use/use.js";
 import {tab} from "https://pinkromeo18.github.io/goz/tab.js"
 import {v3d} from "https://pinkromeo18.github.io/goz/v3d.js"
+import {keyloop} from "https://pinkromeo18.github.io/goz/key.js"
 
 
 export function Goz(query,url){
@@ -76,9 +77,9 @@ export function Goz(query,url){
     v3d(ctx,a)
     return o;
   }
-  
+  o.keyloop=keyloop  
   ;
-  console.log('goz.js v1.0')
+  console.log('goz.js v1.1 add keyloop')
   console.log(JSON.stringify( Object.keys(o),null,2))
   return o;
 }
