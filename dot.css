@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'goz';
+  src: url('https://pinkromeo18.github.io/junk/DotGothic16-Regular.ttf') format('truetype');  
+}
+
+html{
+  font-size:16px;
+}
+body{
+  background:#012;
+  color:ghostwhite;
+}
+
+body{
+  font-size:1rem;
+  -webkit-font-smoothing:none!important;
+  font-family:"goz"!important;
+  text-transform:uppercase!important;
+  font-variant-east-asian: full-width!important;
+  font-feature-settings: "fwid"!important;
+  line-height:1.0!important;
+}
+
+*{font-family:"goz"!important;}
+div{
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+pre{margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:1.25rem;font-weight:normal;}
+
+.pre{white-space:pre-wrap;}
+
+  
