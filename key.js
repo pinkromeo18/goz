@@ -18,7 +18,11 @@ var _nowkey={
 }
 
 var nowkey=void 0;
-  
+
+export function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export function keyconfig(obj){
   if(!obj) nowkey=Object.assign({},_nowkey);
   nowkey = Object.assign({},nowkey,obj);
@@ -38,14 +42,18 @@ export function key(){return new Promise(sol=>{
 })
 }
 
-export async function keyloop(caller){  
-    return caller(await key()),keyloop(caller)
+export async function keyloop(caller){
+    await caller(await key(),sleep)
+    return keyloop(caller)
 }
 
 /*
-import {keyconfig,key,keyloop} from "key.js"
-keyloop(k=>{
+import {keyloop} from "https://pinkromeo18.github.io/goz/key.js";
+keyloop(async(k,wait)=>{
   
-  goz.txt('key',k);
+  debug(k)
+  await wait(1000)
+  debug('next');
+  
 })
 */
