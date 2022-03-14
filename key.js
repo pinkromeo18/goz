@@ -49,6 +49,8 @@ export async function keyloop(caller){
 
 /*
 import {keyloop} from "https://pinkromeo18.github.io/goz/key.js";
+var debug=(str)=>document.querySelector('pre').textContent=str;
+
 keyloop(async(k,wait)=>{
   
   debug(k)
